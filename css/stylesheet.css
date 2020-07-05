@@ -71,7 +71,6 @@ header li {
 .header-bottom {
   padding-top: 120px;
   padding-bottom: 40px;
-  background-color: red;
   background-image: url(../img/海中　フリー.jpg);
   text-align:center;
   background-size:cover;
@@ -92,6 +91,11 @@ header li {
   text-align: center;
   width: 100%;
   margin: 0 auto;
+}
+
+.sliderArea {
+  width: 90%;
+  margin: auto;
 }
 
 .slider img{
@@ -157,11 +161,11 @@ display: inline-block;
 width: 55%;
 }
 .access h4 {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .access img {
-  width: 400px;
-  margin-bottom: 40px;
+  width: 80%;
+  margin: 20px auto;
   border: 1px solid black;
 }
 .contact {
@@ -209,7 +213,12 @@ footer h4 {
 }
 
 /*メディアクリエ*/
-@media(max-width: 1200px){
+@media all and (max-width: 1200px){
+
+.slider img {
+  width: 300px;
+  height: 300px;
+}
 
 /*メンバー*/
 .member-left {
@@ -221,7 +230,7 @@ footer h4 {
 /*コンタクト*/
   .access ,.contact {
     display: block;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     padding-left: 0;
@@ -246,7 +255,7 @@ footer h4 {
   }
 }
 
-@media(max-width: 750px){
+@media all and (max-width: 1000px){
   .member-left {
     float:inherit;
     width: 100%;
@@ -254,22 +263,26 @@ footer h4 {
   }
   .member-right {
     float: inherit;
-    width: 400px;
+    width: 60%;
     margin: 40px auto;
   }
   .member-right h3 {
     text-align: center;
   }
+  input,textarea,button {
+    width: 100%;
+    margin: 30px auto;
+  }
 }
 
-@media(max-width: 480px){
+@media all and (max-width: 670px){
   body {
-    width: 480px;
+    min-width: 480px;
     margin: 0 auto;
   }
   header {
-    width: 480px;
-    font-size: 30px;
+    min-width: 480px;
   }
+
 
 }
